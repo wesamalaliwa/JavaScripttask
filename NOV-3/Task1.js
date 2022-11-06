@@ -1,4 +1,4 @@
-let m=-1;
+let m=70;
 if( m <= 49 && m >=0){
     document.writeln("F")
 
