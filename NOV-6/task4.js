@@ -11,5 +11,6 @@ for(var i=1 ;i<=100 ;i++){
     }
   
 }
+document.write("the last number is:" + sum)
    
     
