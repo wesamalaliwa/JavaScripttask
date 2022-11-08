@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live</title>
+    <script type="text/javascript" src="live.js"> </script>
+    <style>
+        .color{
+            color:  red;
+            background-color: antiquewhite;
+
+        }
+
+       
+    </style>
+</head>
+<body>
+    <p id="p1">aktham</p>
+    <img id="img" src="off.PNG" width="25%" height="25%">
+    <h1 id="h1" onmouseover="mouseOver()" onmouseout="mouseOut()">DOM HTML CSS </h1>
+    <button onclick="fun()" >Change</button>
+  
+    <button onclick="displayDate()">Try it</button>
+    <p id="b"></p>
+    Enter your name: <input type="text" id="fname" onchange="myFunction()">
+    <p class="example1">wesam</p>
+    <h2 class="example1">the first example </h2>
+    <p class="example1">the second example</p> 
+    <h3>Welcome</h3>
+    <img id="img1" src="off.PNG" width="25%" height="25%" onmouseover="fun2()" onmouseout="fun3()">
+
+
+
+
+
+<p class="example">Wesam</p>
+<p class="example">Haitham</p>
+<p class="example">Rahma</p>
+<p class="example">Aya</p>
+<p class="example">Roa'a'</p>
+<p class="example">Mayyas</p>
+
+
+<p>HTML</p>
+<p>CSS</p>
+<p>JS</p>
+    <script>
+        /////////document.getElementById(id).innerHTML = new HTML
+        document.getElementById("p1").innerHTML = "Rahma obeidat , software engineer";
+
+    ///document.getElementById(id).attribute = new value
+     document.getElementById("img").src="A.PNG";
+  
+     document.getElementById("p1").style.color="green";
+
+     function fun(){
+
+        document.getElementById("h1").setAttribute("class" ,"color")
+     }
+     function displayDate() {
+  document.getElementById("b").innerHTML = Date();
+}
+function mouseOver() {
+  document.getElementById("h1").style.color = "brown";
+}
+
+function mouseOut() {
+  document.getElementById("h1").style.color = "blue";
+}
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+document.querySelector("p.example1").style.backgroundColor = "blue"; 
+
+
+const element =document.getElementsByTagName("h3");
+element[0].innerHTML="Hello";
+function fun2(){
+    document.getElementById("img1").setAttribute("src" ,"2.PNG")
+
+}
+
+function fun3(){
+    document.getElementById("img1").setAttribute("src" ,"off.PNG")
+
+}
+
+let arr=document.querySelectorAll ("p");
+for(let x=0; x<arr.length ;x++){
+
+    arr[x].style.backgroundColor = "green";
+}
+    </script>
+</body>
+</html>

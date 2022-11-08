@@ -1,0 +1,14 @@
+<label>Car Types:</label>
+<select id="carTypes" onchange="carModel()">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Volvo">Volvo</option>
+</select>
+<p id="showCar"></p>
+  <script>
+
+      function carModel(){
+          var x= document.getElementById('carTypes').value;
+          document.getElementById('showCar').innerHTML="your car is: "+ x;
+      }
+  </script> 
